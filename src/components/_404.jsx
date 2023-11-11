@@ -1,7 +1,7 @@
 
 function _404() {
     return (
-        <section>404</section>
+        <section className="w-full flex-col h-[37rem] flex justify-center items-center text-5xl text-[#b35c4f]">404</section>
     )
 }
 
