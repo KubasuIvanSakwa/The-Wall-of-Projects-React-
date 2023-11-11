@@ -1,4 +1,4 @@
-import DisplayNames from '../components/DisplayNames';
+import DisplayNames from '../components/DisplayNames'
 
 function LeaderBoard() {
     const first_name = 'John'
