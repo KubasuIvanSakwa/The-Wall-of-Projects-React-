@@ -13,6 +13,7 @@ import Projects from "./pages/Projects"
 import Create from "./pages/Create"
 import Meme from "./pages/Meme"
 
+
 function App() {
 
   const routes = createBrowserRouter(createRoutesFromElements(
@@ -26,7 +27,7 @@ function App() {
             <Route path="create" element={<Create />} />
             <Route path="meme" element={<Meme />} />
           </Route>
-          <Route path="*" element={<_404 />} />
+         <Route path="*" element={<_404 />} />
         </Route>
       </Route>
   ))
