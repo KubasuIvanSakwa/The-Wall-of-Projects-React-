@@ -3,7 +3,7 @@
 const projects = [
     {
         name: "Ashwin's Personal Portfolio",
-        image: "./images/portfolioImg.png",
+        image: "/images/portfolioImg.png",
         description:"I have built a personal portfolio website to enhance my frontend skills and showcase my work. Utilizing HTML and Bootstrap, I've crafted an interactive platform to exhibit my projects and abilities. Explore my site to discover my passion for web development and design.",
         usedTech: "HTML,Bootstrap",
         contributorName: "Ashwin Dhangar",
@@ -12,7 +12,7 @@ const projects = [
     },
     {
         name: "Trae's ecommerce-website",
-        image: "./images/traescreenshot.png",
+        image: "/images/traescreenshot.png",
         description:"E-commerce Next.js website built with Typescript and Tailwind CSS, with Local storage backend. meant to emulate store where user can buy favourite football jerseys",
         usedTech: "Typescript, Tailwind CSS",
         contributorName: "Trae Zeeofor",
@@ -21,7 +21,7 @@ const projects = [
     },
     {
         name: "Moviezz",
-        image: "./images/moviezz.png",
+        image: "/images/moviezz.png",
         description:"Moviezz is a web application that replicates the Netflix experience, providing real-time movie data and a user-friendly interface for seamless movie and TV show exploration",
         usedTech: "Reactjs",
         contributorName: "Ashwin Dhangar",
@@ -48,7 +48,7 @@ const projects = [
     },
     {
         name: "Thinkrr - socialise and learn",
-        image: "images/Dashboard.png",
+        image: "/images/Dashboard.png",
         description:"This is flask based website where users and students can socialise and grow their career.",
         usedTech: "Flask/Python, HTML, CSS, JS",
         contributorName: "Kunal Achintya Reddy",
@@ -57,7 +57,7 @@ const projects = [
     },
     {
         name: "Super Market Billing System",
-        image: "./images/BillingSystem.jpg",
+        image: "/images/BillingSystem.jpg",
         description:"Developed a C++ Supermarket Billing System with file handling for efficient product management and data storage, streamlining the billing process",
         usedTech: "C++",
         contributorName: "Ashwin Dhangar",
@@ -67,7 +67,7 @@ const projects = [
     },
     {
         name: "Thermopy",
-        image: "images/Thermopy.png", // Add your project image to the `images` directory
+        image: "/images/Thermopy.png", // Add your project image to the `images` directory
         description:"A simple program that displays the current temperature in a chosen city using a thermometer display",
         usedTech: "Python, Tkinter",
         contributorName: "Kieran Triggs",
@@ -76,7 +76,7 @@ const projects = [
     },
     {
         name: "Agenda",
-        image: "images/Agenda.png",
+        image: "/images/Agenda.png",
         description:"Take control of your time and tasks with Agenda, where you can easily structure your day or event schedules in just a few clicks.",
         usedTech: "HTML, CSS, Bootstrap and JavaScript",
         contributorName: "Patrick Ancajas",
@@ -85,7 +85,7 @@ const projects = [
     },
     {
         name: "React Bitcoin Component",
-        image: "./images/react-bitcoin-component.jpg",
+        image: "/images/react-bitcoin-component.jpg",
         description:"A simple React Component to get latest prices in USD, EUR and/or GBP from Coindesk API, available via NPM.",
         usedTech: "React, NPM",
         contributorName: "Abel Rogers",
@@ -94,7 +94,7 @@ const projects = [
     },
     {
         name: "Timestamp",
-        image: "images/Timestamp.png",
+        image: "/images/Timestamp.png",
         description:"Timestamp is where every second, minute, hour, day, month, and year are elegantly displayed. As you watch the clock tick, find inspiration in quotes that change with the hour and day.",
         usedTech: "HTML, CSS, Bootstrap and JavaScript",
         contributorName: "Patrick Ancajas",
@@ -103,7 +103,7 @@ const projects = [
     },
     {
         name: "COMPASS",
-        image: "images/COMPASS.png",
+        image: "/images/COMPASS.png",
         description: "The web page for TUP - COMPASS club.",
         usedTech: "HTML, CSS and JavaScript",
         contributorName: "Patrick Ancajas",
@@ -112,7 +112,7 @@ const projects = [
     },
     {
         name: "DeepAm Creation",
-        image: "images/deepam.png",
+        image: "/images/deepam.png",
         description:"DeepAm Creations: Your go-to online shop for beautiful flower pots. Shop anytime, anywhere, and elevate your gardening experience.",
         usedTech: "Javascript",
         contributorName: "Akash Yadav",
@@ -121,7 +121,7 @@ const projects = [
     },
     {
         name: "Social Media Handle's",
-        image: "images/socialmedia.png",
+        image: "/images/socialmedia.png",
         description: "One Place to handle all social media accounts link",
         usedTech: "HTML/CSS",
         contributorName: "Akash Yadav",
@@ -130,7 +130,7 @@ const projects = [
     },
     {
         name: "Aaryan's Portfolio website",
-        image: "images/portfoliosite.png",
+        image: "/images/portfoliosite.png",
         description:"This is my personal portfolio website where I uploads my projects as well as some blogs.",
         usedTech: "NextJs/Sanity",
         contributorName: "Aaryan Patel",
@@ -139,7 +139,7 @@ const projects = [
     },
     {
         name: "AyurvedaGPT",
-        image: "images/ayurvedagpt.png",
+        image: "/images/ayurvedagpt.png",
         description:"This is an AI chatbot trained on Ayurveda knowledge just like the ChatGPT.",
         usedTech: "NextJs/Langchain/Vercel",
         contributorName: "Aaryan Patel",

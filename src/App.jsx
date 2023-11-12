@@ -12,6 +12,8 @@ import Contribute from "./pages/Contribute"
 import Projects from "./pages/Projects"
 import Create from "./pages/Create"
 import Meme from "./pages/Meme"
+import ProjectDescription from './components/ProjectDescription'
+import ProjectHome from "./components/ProjectHome"
 
 
 function App() {
@@ -23,7 +25,10 @@ function App() {
             <Route index element={<Hero />} />
             <Route path="leaderboard" element={<LeaderBoard />} />
             <Route path="contribute" element={<Contribute/>} />
-            <Route path="projects" element={<Projects />} />
+            <Route path="projects" element={<Projects />} >
+              <Route index element={<ProjectHome/>} />
+              <Route path="description/:idno" element={<ProjectDescription />} />
+            </Route>
             <Route path="create" element={<Create />} />
             <Route path="meme" element={<Meme />} />
           </Route>
