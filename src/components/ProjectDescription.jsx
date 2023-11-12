@@ -8,7 +8,7 @@ function ProjectDescription() {
 
     return (
         <section className="">
-            <Link to='..' className="w-[3rem] flex justify-center items-center text-center h-[3rem] text-3xl rounded-full  hover:bg-[#5f5c59] hover:border hover:border-white">&larr;</Link>
+            <Link to='..' className="w-[3rem] flex justify-center items-center text-white text-center h-[3rem] text-3xl rounded-full  hover:bg-[#5f5c59] hover:border hover:border-white">&larr;</Link>
             <div className="h-[20rem] overflow-hidden flex justify-center">
                 <img src={active.image} className=""/>
                 <div className="w-[15rem] ml-4 h-[20rem] flex flex-col justify-center items-center">
