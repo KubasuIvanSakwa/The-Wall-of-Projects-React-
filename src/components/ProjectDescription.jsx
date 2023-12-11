@@ -1,16 +1,29 @@
 import { Link, useParams } from "react-router-dom"
+import { useState } from "react"
 import projects from "../../public/projects.js"
+import _404 from './_404';
 
 function ProjectDescription() {
     const { idno } = useParams()
 
     const active = projects.find((item) => item.name === idno)
+    const [imageLoaded, setImageLoaded] = useState(false)
 
     return (
         <section className="">
             <Link to='..' className="w-[3rem] flex justify-center items-center text-white text-center h-[3rem] text-3xl rounded-full  hover:bg-[#5f5c59] hover:border hover:border-white">&larr;</Link>
             <div className="h-[20rem] overflow-hidden flex justify-center">
-                <img src={active.image} className=""/>
+                {imageLoaded ?
+                    <img
+                        src={active.image}
+                        alt={active.name}
+                        className=""
+                        loading="lazy"
+                        onLoad={() => setImageLoaded(true)} 
+                    />
+                    :
+                    <p className="align-center self-center relative left-0">Loading ...</p>
+                }
                 <div className="w-[15rem] ml-4 h-[20rem] flex flex-col justify-center items-center">
 
                     <button 
