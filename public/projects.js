@@ -22,8 +22,8 @@
             liveLink: "https://vy211.github.io/Weather-Info/",
         },
         {
-            name: "Responsive Payment Form ",
-            image: "",
+            name: "Responsive Payment Form",
+            image: "/images/preview.jpeg",
             description:
             "Hey there , I created this cool responsive payment form using HTML and CSS ,  ",
             usedTech: "HTML, CSS",
@@ -33,7 +33,7 @@
         },
         {
             name: "Tarsho",
-            image: "https://drive.google.com/open?id=11exI1VQ824jGGO75Fj4XJ_9nKtSuZaQX",
+            image: "/images/preview.jpeg",
             description:
             "Tarsho is a groundbreaking mobile application designed to streamline the connection between independent contractors and customers seeking professional services. It simplifies the process of discovering and engaging with dependable service providers, catering to various needs such as HVAC, plumbing, and electrical work. With an intuitive design and a user-friendly interface, Tarsho aims to revolutionize interactions between customers and service professionals. Its key features include dual account creation options for consumers and service providers, comprehensive service listings with detailed information, advanced proximity-based search functionality, and a seamless user experience. The tech stack powering Tarsho encompasses React Native for mobile development, React for the web platform, Node.js and Express.js for a robust backend, MongoDB for flexible data management, and GitHub Actions for continuous integration and deployment, all aimed at delivering a reliable and efficient service ecosystem. Deployment strategies for cloud and hosting are yet to be determined, and version control is managed through Git hosted on GitHub.Tarsho is a groundbreaking mobile application designed to streamline the connection between independent contractors and customers seeking professional services. It simplifies the process of discovering and engaging with dependable service providers, catering to various needs such as HVAC, plumbing, and electrical work. With an intuitive design and a user-friendly interface, Tarsho aims to revolutionize interactions between customers and service professionals. Its key features include dual account creation options for consumers and service providers, comprehensive service listings with detailed information, advanced proximity-based search functionality, and a seamless user experience. The tech stack powering Tarsho encompasses React Native for mobile development, React for the web platform, Node.js and Express.js for a robust backend, MongoDB for flexible data management, and GitHub Actions for continuous integration and deployment, all aimed at delivering a reliable and efficient service ecosystem. Deployment strategies for cloud and hosting are yet to be determined, and version control is managed through Git hosted on GitHub.",
             usedTech: "Reactjs, Nodejs, Expressjs, Mongodb",
@@ -82,7 +82,7 @@
             liveLink: "",
         },
         {
-            name: "Animated NavBar ",
+            name: "Animated NavBar",
             image: "/images/navbar.png",
             description:
             "Hey there , I created this cool animated navbar using HTML and CSS , Try it Once, you will love this.... ",

@@ -1,7 +1,6 @@
 import { Link, useParams } from "react-router-dom"
 import { useState } from "react"
 import projects from "../../public/projects.js"
-import _404 from './_404';
 
 function ProjectDescription() {
     const { idno } = useParams()
@@ -12,18 +11,34 @@ function ProjectDescription() {
     return (
         <section className="">
             <Link to='..' className="w-[3rem] flex justify-center items-center text-white text-center h-[3rem] text-3xl rounded-full  hover:bg-[#5f5c59] hover:border hover:border-white">&larr;</Link>
-            <div className="h-[20rem] overflow-hidden flex justify-center">
-                {imageLoaded ?
+            <div className="h-[20rem] overflow-hidden flex justify-center items-center relative">
+                <div className="relative overflow-hidden flex items-center justify-center w-[50rem]">
+
+                    { !imageLoaded ? (
+                        <div className="loader absolute z-20">
+                            <div className="bar1"></div>
+                            <div className="bar2"></div>
+                            <div className="bar3"></div>
+                            <div className="bar4"></div>
+                            <div className="bar5"></div>
+                            <div className="bar6"></div>
+                            <div className="bar7"></div>
+                            <div className="bar8"></div>
+                            <div className="bar9"></div>
+                            <div className="bar10"></div>
+                            <div className="bar11"></div>
+                            <div className="bar12"></div>
+                        </div>
+                        ) : null
+                    }
                     <img
                         src={active.image}
                         alt={active.name}
-                        className=""
+                        className="cover"
                         loading="lazy"
-                        onLoad={() => setImageLoaded(true)} 
+                        onLoad={() => setImageLoaded(true)}
                     />
-                    :
-                    <p className="align-center self-center relative left-0">Loading ...</p>
-                }
+                </div>
                 <div className="w-[15rem] ml-4 h-[20rem] flex flex-col justify-center items-center">
 
                     <button 
