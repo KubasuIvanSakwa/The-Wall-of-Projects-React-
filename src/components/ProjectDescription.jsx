@@ -7,6 +7,8 @@ function ProjectDescription() {
 
     const active = projects.find((item) => item.name === idno)
     const [imageLoaded, setImageLoaded] = useState(false)
+    const hide = document.querySelector('.noLink')
+    const hide1 = document.querySelector('.noLink1')
 
     return (
         <section className="">
@@ -44,24 +46,30 @@ function ProjectDescription() {
                     <button 
                         className="border p-4 w-[10rem] m-4 border-[#A99985] text-[#b5b8a2] hover:bg-[#b5b8a2] hover:text-black"
                         onClick={() => {
-                            window.open(
+                            {active.codeLink?
+                                window.open(
                                 `${active.codeLink}`,
                                 '_blank' // <- This is what makes it open in a new window.
-                            )}}
+                            ) : hide1.classList.remove('hidden')}
+                        }}
                     >
                         Code&nbsp;&nbsp;&#x2B67;
                     </button>
+                    <p className="hidden noLink1 bg-white p-1 w-[6rem] text-center text-red-900 rounded-tr-lg rounded-br-lg rounded-bl-lg relative bottom-[2rem]  ">No link</p>
                     <button 
                         className="border p-4 w-[10rem] m-4 border-[#A99985] text-[#b5b8a2] hover:bg-[#b5b8a2] hover:text-black"
                         onClick={() => {
-                            window.open(
-                                `${active.liveLink}`,
-                                '_blank' // <- This is what makes it open in a new window.
-                            )}}
+                            {active.liveLink ?
+                                window.open(
+                                    `${active.liveLink}`,
+                                    '_blank' //makes it open in a new window.
+                                ) : hide.classList.remove('hidden')
+                            }
+                        }}
                     >
                         Live Demo &nbsp;&nbsp;&#x2B67;
                     </button>
-
+                    <p className="hidden noLink bg-white p-1 w-[6rem] text-center text-red-900 rounded-tr-lg rounded-br-lg rounded-bl-lg relative bottom-[2rem]  ">No link</p>
                 </div>
             </div>
             <div>
