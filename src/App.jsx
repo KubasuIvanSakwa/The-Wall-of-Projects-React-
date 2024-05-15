@@ -32,7 +32,7 @@ function App() {
             <Route path="create" element={<Create />} />
             <Route path="meme" element={<Meme />} />
           </Route>
-         <Route path="*" element={<_404 />} />
+        <Route path="*" element={<_404 />} />
         </Route>
       </Route>
   ))
