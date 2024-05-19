@@ -10,10 +10,11 @@ function ProjectDescription() {
     const [imageLoaded, setImageLoaded] = useState(false)
     const hide = document.querySelector('.noLink')
     const hide1 = document.querySelector('.noLink1')
+    console.log(active)
 
     return (
         <section className="">
-            <Link to='..' className="w-[3rem] flex justify-center items-center text-white text-center h-[3rem] text-3xl rounded-full  hover:bg-[#5f5c59] hover:border hover:border-white">&larr;</Link>
+            <div onClick={() => history.back()} className="w-[3rem] cursor-pointer flex justify-center items-center text-white text-center h-[3rem] text-3xl rounded-full  hover:bg-[#5f5c59] hover:border hover:border-white">&larr;</div>
             <div className="h-[20rem] overflow-hidden flex justify-center items-center relative">
                 <div className="relative overflow-hidden flex items-center justify-center w-[50rem]">
 

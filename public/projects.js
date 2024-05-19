@@ -50,12 +50,12 @@ const projects = [
     liveLink: "https://vy211.github.io/Weather-Info/",
   },
   {
-    name: "Responsive Payment Form ",
+    name: "Responsive Payment Form",
     image: "/images/preview.jpeg",
     description:
       "Hey there , I created this cool responsive payment form using HTML and CSS ,  ",
     usedTech: "HTML, CSS",
-    contributorName: "Vivek Paswan ",
+    contributorName: "Vivek Paswan",
     codeLink: "https://github.com/vivek-paswan028/Paymentform",
     liveLink: "https://paymentform-blush.vercel.app/",
   },

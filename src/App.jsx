@@ -28,6 +28,7 @@ function App() {
               <Route path="leaderboard">
                 <Route index element={<LeaderBoard />} />
                 <Route path="profile/:username" element={<ProfilePage />} />
+                <Route path="profile/:username/description/:idno" element={<ProjectDescription />} />
               </Route>
               <Route path="contribute" element={<Contribute/>} />
               <Route path="projects" element={<Projects />} >
