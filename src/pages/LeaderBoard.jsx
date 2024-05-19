@@ -13,7 +13,7 @@ function LeaderBoard() {
     contributorCountsArray.sort((a, b) => b.count - a.count)
     return (
         <section className='h-[37rem] w-full p-3'>
-            <h1 className="text-4xl text-center mb-[3rem] text-[#afa89f]">Star Contributors</h1>
+            <h1 className="text-4xl text-center mb-[3rem] text-[#afa89f]">Contributors</h1>
             <table id="contributorTable" className='w-full mb-10'>
                 <thead className="">
                     <tr className='bg-red-500 w-full'>

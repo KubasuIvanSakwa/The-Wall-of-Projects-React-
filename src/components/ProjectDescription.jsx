@@ -10,7 +10,6 @@ function ProjectDescription() {
     const [imageLoaded, setImageLoaded] = useState(false)
     const hide = document.querySelector('.noLink')
     const hide1 = document.querySelector('.noLink1')
-    console.log(active)
 
     return (
         <section className="">
