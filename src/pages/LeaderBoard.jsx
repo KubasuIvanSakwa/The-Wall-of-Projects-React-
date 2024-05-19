@@ -23,7 +23,13 @@ function LeaderBoard() {
                 </thead>
                 <tbody>
                     {contributorCountsArray.map((item, index) => (
-                        <tr key={index} className="border-b hover:bg-[#464343] cursor-pointer font-[900] text-xl text-[#9c9a9a] last:border-none">
+                        <tr 
+                            key={index}    
+                            className="border-b hover:bg-[#464343] cursor-pointer font-[900] text-xl text-[#9c9a9a] last:border-none"
+                            onClick={() => {
+                                window.location.href = `leaderboard/profile/${item.name}`
+                            }}
+                        >
                             <td className='p-4 border-r'>{item.name}</td>
                             <td className='p-4'>{item.count}</td>
                         </tr>
