@@ -1,7 +1,7 @@
 import projects from "../../public/projects.js"
 
 function LeaderBoard() {
-    
+
     const contributorCounts = {}
     for (const project of projects) {
         const { contributorName } = project
@@ -9,7 +9,24 @@ function LeaderBoard() {
     }
 
     const contributorCountsArray = Object.entries(contributorCounts).map(([name, count]) => ({ name, count }))
-    
+
+    // const contributorNames = Object.entries(contributorCounts).map(([name]) => ({ name }))
+    // let names = []
+    // contributorNames.map((item) => {
+    //     let contributorName = item.name
+    //     names.push(contributorName)
+    // })
+    // console.log(names)
+
+    // let newNames = names.map(name => {
+    //     const newName = name.replace(/\s+/g, '')
+    //     return newName
+    // })
+
+    // console.log(newNames)
+
+
+
     contributorCountsArray.sort((a, b) => b.count - a.count)
     return (
         <section className='h-[37rem] w-full p-3'>
@@ -23,11 +40,12 @@ function LeaderBoard() {
                 </thead>
                 <tbody>
                     {contributorCountsArray.map((item, index) => (
-                        <tr 
-                            key={index}    
+                        <tr
+                            key={index}
                             className="border-b hover:bg-[#464343] cursor-pointer font-[900] text-xl text-[#9c9a9a] last:border-none"
                             onClick={() => {
-                                window.location.href = `leaderboard/profile/${item.name}`
+                                window.location.href = `leaderboard/profile/${item.name.replace(/\s+/g, '')}`
+                                localStorage.setItem("name", `${item.name}`)
                             }}
                         >
                             <td className='p-4 border-r'>{item.name}</td>

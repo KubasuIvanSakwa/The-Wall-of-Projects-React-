@@ -3,7 +3,7 @@ import projects from "../../public/projects.js"
 import ProjectCard from "../components/ProjectCard"
 
 function ProfilePage() {
-    const { username } = useParams()
+    const username = localStorage.getItem('name')
 
     const filterProjects = projects.filter((contributor) => {
         return contributor.contributorName === `${username}`
