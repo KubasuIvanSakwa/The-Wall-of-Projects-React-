@@ -43,10 +43,10 @@ function LeaderBoard() {
                         <tr
                             key={index}
                             className="border-b hover:bg-[#464343] cursor-pointer font-[900] text-xl text-[#9c9a9a] last:border-none"
-                            onClick={() => {
-                                const newItem = item.name.replace(/\s+/g, '')
-                                window.location.href = `leaderboard/profile/${newItem}`
+                            onClick={async () => {
+                                let newItem = item.name.replace(/\s+/g, '')
                                 localStorage.setItem("name", `${item.name}`)
+                                window.location.href = `leaderboard/profile/${newItem}`
                             }}
                         >
                             <td className='p-4 border-r'>{item.name}</td>
