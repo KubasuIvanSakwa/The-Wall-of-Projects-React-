@@ -44,7 +44,8 @@ function LeaderBoard() {
                             key={index}
                             className="border-b hover:bg-[#464343] cursor-pointer font-[900] text-xl text-[#9c9a9a] last:border-none"
                             onClick={() => {
-                                window.location.href = `leaderboard/profile/${item.name.replace(/\s+/g, '')}`
+                                const newItem = item.name.replace(/\s+/g, '')
+                                window.location.href = `leaderboard/profile/${newItem}`
                                 localStorage.setItem("name", `${item.name}`)
                             }}
                         >

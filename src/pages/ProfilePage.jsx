@@ -1,4 +1,3 @@
-import { useParams } from "react-router-dom"
 import projects from "../../public/projects.js"
 import ProjectCard from "../components/ProjectCard"
 
