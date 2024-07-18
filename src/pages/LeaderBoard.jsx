@@ -1,6 +1,8 @@
+import { useNavigate } from "react-router-dom"
 import projects from "../../public/projects.js"
 
 function LeaderBoard() {
+    const navigate = useNavigate()
 
     const contributorCounts = {}
     for (const project of projects) {
@@ -31,7 +33,7 @@ function LeaderBoard() {
                             onClick={() => {
                                 let newItem = item.name.toLowerCase().replace(/\s+/g, '')
                                 localStorage.setItem("name", `${item.name}`)
-                                window.location.href = `/${newItem}`
+                                navigate(`/leaderboard/${newItem}`)
                             }}
                         >
                             <td className='p-4 border-r'>{item.name}</td>
