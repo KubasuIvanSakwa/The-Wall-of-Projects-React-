@@ -31,7 +31,7 @@ function LeaderBoard() {
                             onClick={() => {
                                 let newItem = item.name.toLowerCase().replace(/\s+/g, '')
                                 localStorage.setItem("name", `${item.name}`)
-                                window.location.href = `leaderboard/${newItem}`
+                                window.location.href = `/${newItem}`
                             }}
                         >
                             <td className='p-4 border-r'>{item.name}</td>
