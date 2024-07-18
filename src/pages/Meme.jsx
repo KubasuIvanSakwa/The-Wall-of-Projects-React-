@@ -1,4 +1,3 @@
-import memes from '../../public/meme.js'
 
 function Meme() {
     // console.log(memes)

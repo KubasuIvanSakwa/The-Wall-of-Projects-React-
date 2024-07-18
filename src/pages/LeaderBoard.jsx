@@ -10,21 +10,6 @@ function LeaderBoard() {
 
     const contributorCountsArray = Object.entries(contributorCounts).map(([name, count]) => ({ name, count }))
 
-    // const contributorNames = Object.entries(contributorCounts).map(([name]) => ({ name }))
-    // let names = []
-    // contributorNames.map((item) => {
-    //     let contributorName = item.name
-    //     names.push(contributorName)
-    // })
-    // console.log(names)
-
-    // let newNames = names.map(name => {
-    //     const newName = name.replace(/\s+/g, '')
-    //     return newName
-    // })
-
-    // console.log(newNames)
-
 
 
     contributorCountsArray.sort((a, b) => b.count - a.count)
