@@ -43,7 +43,7 @@ function LeaderBoard() {
                         <tr
                             key={index}
                             className="border-b hover:bg-[#464343] cursor-pointer font-[900] text-xl text-[#9c9a9a] last:border-none"
-                            onClick={async () => {
+                            onClick={() => {
                                 let newItem = item.name.toLowerCase().replace(/\s+/g, '')
                                 localStorage.setItem("name", `${item.name}`)
                                 window.location.href = `leaderboard/profile/${newItem}`
